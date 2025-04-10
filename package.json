@@ -1,0 +1,16 @@
+{
+  "name": "algo-dojo",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "mocha": "^11.1.0"
+  }
+}
