@@ -6,43 +6,71 @@
 
 Welcome, warrior!
 
-This repo is all about algorithms and data structures.
+This is your training ground for mastering algorithms and data structures. In
+this dojo, you’ll learn to spot inefficiencies, sharpen your skills, and write
+code that performs like a champion.
 
-## Sorting
+---
 
-The `sorting` directory doesn't have any work for you to do, however it does
-demonstrate how we can benchmark different solutions to help choose the most
-performant one.
+## 🔢 Sorting
 
-Try running `node sorting/benchmark.js` to see how they perform. The one with
-the highest operations per second is the best.
+The `sorting/` directory doesn’t contain exercises — instead, it demonstrates
+how to **benchmark different sorting algorithms**.
 
-## Two pointers
+To try it out:
 
-The `two-pointers` directory has a bunch of problems than can be solved
-"naively" (using nested loops) or using a two-pointer solution.
+```bash
+node sorting/benchmark.js
+```
 
-For each problem, the `instructions.md` gives a description of the nested loop
-code and the two-pointer code. See if you can reproduce each algorithm, then run
-`npm test` and also the `*.benchmark.js` script in each file to see the
-different in performance.
+The algorithm with the highest **operations per second** is the most performant.
 
-## Trees
+## 🪄 Two Pointers
 
-When working with trees, we often need to traverse the tree to modify nodes or
-aggregate information.
+The `two-pointers/` directory contains problems that can be solved either with:
 
-Two possible approaches here are the "stack" approach and the "recursion"
-approach. (Technically, the recursion appraoch will use a "call stack"
-internally, so the two are effectively very similar but the code looks slightly
-different.)
+- A **naive nested loop** approach
+- A **two-pointer** strategy (more efficient!)
 
-Again, the `instructions.md` gives a detailed description of each solution. See
-if you can implement the solution, use `npm test` to check, and the
-`*.benchmark.js` script to check the performance difference.
+Each folder includes an `instructions.md` file that describes both approaches.
+Your task:
 
-## Beyond
+1. Reproduce the logic in code
+2. Run the tests with:
 
-This repos gives a taster of taking different approaches to two different
-classes of problems. After some experience of working with algorithms, you will
-come to realise that the same few problems tend to turn up again and again.
+   npm test
+
+3. Benchmark the performance by running the `*.benchmark.js` script in each
+   folder
+
+You'll see how smarter techniques can drastically improve performance.
+
+---
+
+## 🌲 Trees
+
+In the `trees/` directory, you'll work on recursive data structures — problems
+where each node can contain subtasks (children).
+
+You’ll solve each problem using both:
+
+- An **iterative** approach using a stack
+- A **recursive** approach using the call stack
+
+Each folder contains:
+
+- An `instructions.md` file explaining both solutions step-by-step
+- Tests to validate your work
+- A benchmark script to compare approaches
+
+## 🚀 Beyond
+
+This repo gives you a taste of solving problems using different techniques
+across two classic domains: arrays and trees.
+
+As you train, you’ll notice the same patterns show up again and again.
+
+The key is learning to recognise which technique unlocks the best performance,
+and mastering the tools that help you get there.
+
+Good luck, warrior 💪
