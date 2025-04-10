@@ -10,8 +10,6 @@ This is your training ground for mastering algorithms and data structures. In
 this dojo, you’ll learn to spot inefficiencies, sharpen your skills, and write
 code that performs like a champion.
 
----
-
 ## 🔢 Sorting
 
 The `sorting/` directory doesn’t contain exercises — instead, it demonstrates
@@ -20,7 +18,7 @@ how to **benchmark different sorting algorithms**.
 To try it out:
 
 ```bash
-node sorting/benchmark.js
+node sorting/sorting.benchmark.js
 ```
 
 The algorithm with the highest **operations per second** is the most performant.
@@ -44,8 +42,6 @@ Your task:
    folder
 
 You'll see how smarter techniques can drastically improve performance.
-
----
 
 ## 🌲 Trees
 
