@@ -9,13 +9,20 @@ Return a new array with the result.
 
 ## 🐢 Naive Solution: `shiftZerosA`
 
-Iterate through the array:
+Use two temporary arrays to separate the values.
 
-- If you find a zero, remove it with `splice()` and `push(0)` to the end
-- Keep track of how many zeros you've moved
+Steps:
 
-- Time complexity: O(n²) due to repeated splicing and shifting
-- Space complexity: O(n) due to copying
+1. Create an empty array for non-zero values.
+2. Create another empty array for zeros.
+3. Loop through the input array:
+   - If the value is zero, add it to the zeros array.
+   - Otherwise, add it to the non-zero array.
+4. Return a new array formed by concatenating the non-zero values followed by
+   the zeros.
+
+- Time complexity: O(n)
+- Space complexity: O(n), because it creates two new arrays and returns a third
 
 ## 🐇 Two-Pointer Solution: `shiftZerosB`
 
@@ -28,4 +35,4 @@ Iterate through the array:
 
 - Time complexity: O(n)
 - Space complexity: O(n)
-- Avoids costly `splice()` operations and keeps non-zero order
+- Avoids creating new arrays, adding to space complexity
