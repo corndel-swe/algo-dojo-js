@@ -1,6 +1,6 @@
 import Benchmark from 'benchmark'
 import { countCompletedA, countCompletedB } from './countCompleted.js'
-import taskTree from '../data.json' assert { type: 'json' }
+import taskTree from '../data.json' with { type: 'json' }
 
 const suite = new Benchmark.Suite()
 

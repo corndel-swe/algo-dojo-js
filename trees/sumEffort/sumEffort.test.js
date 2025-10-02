@@ -1,6 +1,6 @@
 import assert from 'assert'
 import { sumEffortA, sumEffortB } from './sumEffort.js'
-import taskTree from '../data.json' assert { type: 'json' }
+import taskTree from '../data.json' with { type: 'json' }
 
 describe('sumEffortA', () => {
   it('returns the correct total effort', () => {

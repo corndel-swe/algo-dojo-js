@@ -1,6 +1,6 @@
 import assert from 'assert'
 import { countCompletedA, countCompletedB } from './countCompleted.js'
-import taskTree from '../data.json' assert { type: 'json' }
+import taskTree from '../data.json' with { type: 'json' }
 
 describe('countCompletedA', () => {
   it('returns the correct number of completed tasks', () => {

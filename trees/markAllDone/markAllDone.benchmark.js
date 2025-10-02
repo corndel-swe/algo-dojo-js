@@ -1,6 +1,6 @@
 import Benchmark from 'benchmark'
 import { markAllDoneA, markAllDoneB } from './markAllDone.js'
-import taskTree from '../data.json' assert { type: 'json' }
+import taskTree from '../data.json' with { type: 'json' }
 
 function clone(obj) {
   return structuredClone(obj)

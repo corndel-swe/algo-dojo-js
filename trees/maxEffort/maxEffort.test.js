@@ -1,6 +1,6 @@
 import assert from 'assert'
 import { maxEffortA, maxEffortB } from './maxEffort.js'
-import taskTree from '../data.json' assert { type: 'json' }
+import taskTree from '../data.json' with { type: 'json' }
 
 describe('maxEffortA', () => {
   it('returns the correct max effort', () => {

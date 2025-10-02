@@ -1,6 +1,6 @@
 import assert from 'assert'
 import { markAllDoneA, markAllDoneB } from './markAllDone.js'
-import originalTree from '../data.json' assert { type: 'json' }
+import originalTree from '../data.json' with { type: 'json' }
 
 // Helper to deep clone and verify all done
 function clone(obj) {
