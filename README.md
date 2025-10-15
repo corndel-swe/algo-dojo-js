@@ -36,7 +36,14 @@ Your task:
 1. Reproduce the logic in code
 2. Run the tests with:
 
-   npm test
+   ```bash
+      # To test individual test suites:
+      # npm test path/to/test.js
+      npm test ./two-pointers/remove-dupes/removeDupes.test.js
+
+      # To run all test suites:
+      npm run test-all
+   ```
 
 3. Benchmark the performance by running the `*.benchmark.js` script in each
    folder
